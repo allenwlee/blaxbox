@@ -1,4 +1,6 @@
 Blaxbox::Application.routes.draw do
+  resources :financials
+  
   get "financials/new"
 
   get "user_data/new"

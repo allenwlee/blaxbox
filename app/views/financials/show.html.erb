@@ -1,4 +1,29 @@
-<h1>Financials#show</h1>
-	<%= @financial.advance %>
-	<%= Financial.average('advance') %>
+<div class = "row">
+  <div class = "span6">
+    <div class = "hero-unit">
+      <h3>What was the total domestic distribution advance that you received for your last film?</h3>
+
+        <%= form_for(@financial) do |f| %>
+          <%= f.label :your_advance %>
+        <% end %>
+        <%= @financial.advance %>
+        <br /><br /><br />
+    </div>
+  </div>
+  <div class = "span6">
+    <div class = "hero-unit">
+      <h3><br /><br /><br /></h3>
+
+        <%= form_for(@financial) do |f| %>
+          <%= f.label :average %>
+         <% end %>
+         <%= Financial.average('advance') %>
+        <br /><br /><br />
+    </div>
+  </div>
+</div>
+
+
+
+	
 

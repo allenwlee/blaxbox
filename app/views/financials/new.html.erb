@@ -1,8 +1,27 @@
-<h1>What was the total domestic distribution advance that you received for your last film?</h1>
+<div class = "row">
+  <div class = "span6">
+    <div class = "hero-unit">
+      <h3>What was the total domestic distribution advance that you received for your last film?</h3>
 
-<%= form_for(@financial) do |f| %>
-  <%= f.label :advance %>
-  <%= f.text_field :advance %>
-  
-  <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
-<% end %>
+        <%= form_for(@financial) do |f| %>
+          <%= f.label :advance %>
+          <%= f.text_field :advance %>
+          
+          <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+        <% end %>
+    </div>
+  </div>
+  <div class = "span6">
+    <div class = "hero-unit">
+      <h3><br /><br /><br /></h3>
+
+        <%= form_for(@financial) do |f| %>
+          <%= f.label :average %>
+          <%= f.text_field :advance %>
+
+          <br /><br /><br />
+        <% end %>
+    </div>
+  </div>
+</div>
+

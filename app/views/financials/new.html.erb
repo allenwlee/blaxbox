@@ -1,2 +1,8 @@
-<h1>Financials#new</h1>
-<% @financial.advance %>
+<h1>What was the total domestic distribution advance that you received for your last film?</h1>
+
+<%= form_for(@financial) do |f| %>
+  <%= f.label :advance %>
+  <%= f.text_field :advance %>
+  
+  <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<% end %>

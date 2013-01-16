@@ -3,8 +3,6 @@ Blaxbox::Application.routes.draw do
   
   get "financials/new"
 
-  get "user_data/new"
-
   get "advances/new"
 
   get "static_pages/home"

@@ -5,6 +5,7 @@
 
         <%= form_for(@financial) do |f| %>
           <%= f.label :advance %>
+          <br />
           <%= f.text_field :advance %>
           
           <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
@@ -17,10 +18,9 @@
 
         <%= form_for(@financial) do |f| %>
           <%= f.label :average %>
-          <%= f.text_field :advance %>
-
-          <br /><br /><br />
         <% end %>
+        <input type="text" placeholder="Average of all users" disabled>
+          <br /><br /><br />
     </div>
   </div>
 </div>

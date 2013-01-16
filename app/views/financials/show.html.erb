@@ -1,23 +1,22 @@
 <div class = "row">
   <div class = "span6">
     <div class = "hero-unit">
-      <h3>What was the total domestic distribution advance that you received for your last film?</h3>
-
+      <h3><span>What was the total domestic distribution advance that you received for your last film?</span></h3>
         <%= form_for(@financial) do |f| %>
           <%= f.label :your_advance %>
         <% end %>
-        <%= @financial.advance %>
+        <input type="text" value="<%= @financial.advance %>" disabled>
         <br /><br /><br />
     </div>
   </div>
   <div class = "span6">
     <div class = "hero-unit">
-      <h3><br /><br /><br /></h3>
+      <h3>The average of all users<br /><br /><br /></h3>
 
         <%= form_for(@financial) do |f| %>
           <%= f.label :average %>
          <% end %>
-         <%= Financial.average('advance') %>
+         <input type="text" value="<%= Financial.average('advance') %>" disabled>
         <br /><br /><br />
     </div>
   </div>

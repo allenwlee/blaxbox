@@ -2,6 +2,7 @@
 
 /* universal */
 
+
 html {
   overflow-y: scroll;
 }
@@ -37,6 +38,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+
 }
 
 h2 {
@@ -46,6 +48,10 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: #999;
+}
+
+h3 span {
+  color: gray;
 }
 
 p {
